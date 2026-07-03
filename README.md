@@ -203,7 +203,8 @@ Current status: **13 tests passing**.
 
 ## 📝 Related Blog Posts
 
-- (Placeholder) Agent Hallucination: Root Causes and Systematic Solutions
+- [Agent 幻觉不是 LLM 的错：一个基于 SCM 因果推理的系统性抑制框架](https://juejin.cn/spost/7657956930891939867)（掘金）  
+  [CSDN 镜像](https://blog.csdn.net/janguo_qql/article/details/162548915?sharetype=blogdetail&sharerId=162548915&sharerefer=PC&sharesource=janguo_qql&spm=1011.2480.3001.8118)
 - (Placeholder) From Paper to Code: Engineering Structural Causal Models for LLMs
 - (Placeholder) Memory Engineering in Agent Systems
 

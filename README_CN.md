@@ -208,9 +208,10 @@ python -m pytest tests -v
 
 ## 📝 相关技术博客
 
-- 《Agent 幻觉不是 LLM 的错：一个基于 SCM 因果推理的系统性抑制框架》
-- 《从论文到代码：如何把结构因果模型落地到 LLM 推理监控》
-- 《Agent 记忆工程：短期压缩与长期沉淀的实践》
+- 《[Agent 幻觉不是 LLM 的错：一个基于 SCM 因果推理的系统性抑制框架](https://juejin.cn/spost/7657956930891939867)》（掘金）  
+  [CSDN 镜像](https://blog.csdn.net/janguo_qql/article/details/162548915?sharetype=blogdetail&sharerId=162548915&sharerefer=PC&sharesource=janguo_qql&spm=1011.2480.3001.8118)
+- （待发布）《从论文到代码：如何把结构因果模型落地到 LLM 推理监控》
+- （待发布）《Agent 记忆工程：短期压缩与长期沉淀的实践》
 
 ---
 
