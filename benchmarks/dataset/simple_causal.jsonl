@@ -1,0 +1,5 @@
+{"query": "CPU 使用率 95%，内存 80%，响应时间 5s，根因是什么？", "expected_causal_path": ["CPU", "Memory", "ResponseTime", "RootCause"], "answer_should_contain": ["CPU", "内存"], "category": "simple_causal"}
+{"query": "服务器负载高导致 CPU 和内存都升高，最终响应变慢，根因是什么？", "expected_causal_path": ["Load", "CPU", "Memory", "ResponseTime"], "answer_should_contain": ["Load", "CPU", "Memory"], "category": "simple_causal"}
+{"query": "如果 Load 从 normal 变成 high，ResponseTime 会怎样？", "expected_causal_path": ["Load", "CPU", "Memory", "ResponseTime"], "answer_should_contain": ["变慢", "slow", "高"], "category": "simple_causal"}
+{"query": "CPU 和 Memory 都很高时，ResponseTime 为什么变慢？", "expected_causal_path": ["CPU", "Memory", "ResponseTime"], "answer_should_contain": ["CPU", "Memory", "ResponseTime"], "category": "simple_causal"}
+{"query": "响应时间变慢，磁盘 IO 正常，可能是什么原因？", "expected_causal_path": ["CPU", "Memory", "ResponseTime"], "answer_should_contain": ["CPU", "内存"], "category": "simple_causal"}

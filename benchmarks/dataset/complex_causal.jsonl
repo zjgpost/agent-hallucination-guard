@@ -1,0 +1,5 @@
+{"query": "CPU 高、内存高、响应慢，同时数据库连接池也满了，最可能的根因是什么？", "expected_causal_path": ["Load", "CPU", "Memory", "ResponseTime"], "answer_should_contain": ["Load", "CPU", "内存"], "category": "complex_causal"}
+{"query": "Load 高导致 CPU 高，CPU 高又导致 ResponseTime 变慢，请问这是不是内存问题？", "expected_causal_path": ["Load", "CPU", "ResponseTime"], "answer_should_contain": ["CPU", "不是", "内存"], "category": "complex_causal"}
+{"query": "系统响应慢，已经排除了 IO 问题，接下来该查 CPU、内存还是网络？", "expected_causal_path": ["CPU", "Memory", "ResponseTime"], "answer_should_contain": ["CPU", "内存"], "category": "complex_causal"}
+{"query": "Load 很高但 CPU 和内存都正常，ResponseTime 却很慢，这是怎么回事？", "expected_causal_path": ["Load", "CPU", "Memory", "ResponseTime"], "answer_should_contain": ["IO", "网络", "其他"], "category": "complex_causal"}
+{"query": "CPU 和内存都高，ResponseTime 慢，如果这时候扩容能解决问题吗？", "expected_causal_path": ["Load", "CPU", "Memory", "ResponseTime"], "answer_should_contain": ["Load", "扩容", "可能"], "category": "complex_causal"}

@@ -1,0 +1,5 @@
+{"query": "如果 Load 一直保持 high，但 CPU 被限制在正常水平，ResponseTime 还会慢吗？", "expected_causal_path": ["Load", "CPU", "Memory", "ResponseTime"], "answer_should_contain": ["Memory", "可能", "慢"], "category": "counterfactual"}
+{"query": "假设 Memory 不会受 Load 影响，CPU 高的时候 ResponseTime 一定慢吗？", "expected_causal_path": ["CPU", "ResponseTime"], "answer_should_contain": ["不一定", "可能", "CPU"], "category": "counterfactual"}
+{"query": "如果 Load 已经降到 normal，但 CPU 还是 high，ResponseTime 会怎样？", "expected_causal_path": ["CPU", "ResponseTime"], "answer_should_contain": ["可能", "慢", "CPU"], "category": "counterfactual"}
+{"query": "假设我们给服务器加了内存，Load 高的时候 CPU 还会高吗？", "expected_causal_path": ["Load", "CPU"], "answer_should_contain": ["会", "Load", "CPU"], "category": "counterfactual"}
+{"query": "如果 ResponseTime 已经变慢，但 CPU 和内存都正常，那么根因一定不是 CPU 和内存，对吗？", "expected_causal_path": ["CPU", "Memory", "ResponseTime", "RootCause"], "answer_should_contain": ["对", "不是", "CPU"], "category": "counterfactual"}
